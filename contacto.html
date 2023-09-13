@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='css/style.css'>
+    <script src='js/script.js'></script>
+    <title>PUPPY - Spa Canino</title>
+    <!-- Agregar el Favicon -->
+    <link rel="icon" href="img/android-chrome-192x192.png">
+</head>
+
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='index.html'>INICIO</a></li>
+            <li><a class='dropdown-arrow' href='http://'>PRODUCTOS</a>
+                <ul class='sub-menus'>
+                    <li><a href='http://'>Products 1</a></li>
+                    <li><a href='http://'>Products 2</a></li>
+                    <li><a href='http://'>Products 3</a></li>
+                    <li><a href='http://'>Products 4</a></li>
+                </ul>
+            </li>
+            <li><a href='sobrenosotros.html'>SOBRE NOSOTROS</a></li>
+            <li><a class='dropdown-arrow' href='servicios.html'>SERVICIOS</a>
+                <ul class='sub-menus'>
+                    <li><a href='http://'>PELUQUERIA</a></li>
+                    <li><a href='http://'>SPA</a></li>
+                    <li><a href='http://'>Services 3</a></li>
+                </ul>
+            </li>
+            <li><a href='contacto.html'>CONTACTO</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <section>
+            <h1>CONTACTO</h1>
+            <h2>Formulario de Contacto</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+
+                    <br>
+                    <!-- Apellido -->
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" size="10" maxlength="5" required>
+
+                    <br>
+                    <!-- DNI -->
+                    <label for="dni">DNI: </label>
+                    <input type="number">
+
+                    <br>
+                    <!-- Nro de Trámite -->
+                    <label for="nro_tramite">Número de Trámite: </label>
+                    <input type="password">
+
+                    <br>
+                    <!-- Cant de Hijos -->
+                    <label for="hijos">Nro de Hijos (0 a 10): </label>
+                    <input type="number" min="0" max="10">
+
+                    <br>
+                    <!-- Mail -->
+                    <label for="mail">Mail: </label>
+                    <input type="email">
+
+                    <br>
+                    <!-- Fecha de Nacimiento -->
+                    <label for="fecnac">Fecha de Nacimiento: </label>
+                    <input type="date" min="2023-01-01" max="2023-12-31">
+
+                    <br>
+                    <!-- Adjuntar archivo -->
+                    <label for="archivo">Adjuntar archivo: </label>
+                    <input type="file">
+                </fieldset>
+
+
+                <br><br>
+
+                </fieldset>
+
+                <br><br>
+                <!-- Comentarios -->
+                <label for="comentarios">Comentarios: </label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+
+                <br><br>
+
+                <!-- Botones -->
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Borrar">
+
+
+            </form>
+
+        </section>
+        <br><br><br>
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210177.06960026242!2d-58.66172176718747!3d-34.6037389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1692050566059!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <h4>😎 2023 Codo a Codo. Todos los derechos reservados </h4>
+    </footer>
+</body>
+
+</html>
