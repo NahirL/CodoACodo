@@ -1,72 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
-<head>
-    <meta charset='UTF-8'>
-    <link rel='stylesheet' href='css/style.css'>
-    <script src='js/script.js'></script>
-    <title>PUPPY - Spa Canino</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>PetSpa-Servicios</title>
     <!-- Agregar el Favicon -->
-    <link rel="icon" href="img/android-chrome-192x192.png">
-</head>
+    <link rel="icon" href="img/favicon.png" />
 
-<body>
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-            <li><a href='index.html'>INICIO</a></li>
-            <li><a class='dropdown-arrow' href='http://'>PRODUCTOS</a>
-                <ul class='sub-menus'>
-                    <li><a href='http://'>Products 1</a></li>
-                    <li><a href='http://'>Products 2</a></li>
-                    <li><a href='http://'>Products 3</a></li>
-                    <li><a href='http://'>Products 4</a></li>
-                </ul>
-            </li>
-            <li><a href='sobrenosotros.html'>SOBRE NOSOTROS</a></li>
-            <li><a class='dropdown-arrow' href='servicios.html'>SERVICIOS</a>
-                <ul class='sub-menus'>
-                    <li><a href='http://'>PELUQUERIA</a></li>
-                    <li><a href='http://'>SPA</a></li>
-                    <li><a href='http://'>Services 3</a></li>
-                </ul>
-            </li>
-            <li><a href='contacto.html'>CONTACTO</a></li>
+      <!-- Agregar fuentes -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1><img src="img/logo.png" alt=""></a>PetSpa</h1>
+        <ul class="navegacion">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li><a href="productos.html" class="nav-link">Productos</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
         </ul>
+        <ul>
+            <li><a href="#" class="nav-link">Soy cliente</a></li>
+        </ul>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+            <ion-icon class="barras" name="menu-outline"></ion-icon>
+        </button>
     </nav>
-
-
-
-    <h1>Peluqueria canina</h1>
-    <h2>Nuestros servicios</h2>
+     
+    </header>
+    <hr>
+    <br>
+    <button>Nuestros servicios</button>
+    <br><br>
+<hr>
 
     <main>
-        <!-- Sección Inicio -->
-        <section>
-            <h1>PELUQUERIA CANINA</h1>
-            <h3>Sobre nosotros</h3>
-            <hr>
-            <p>Se nos reconoce por el cuidado y arreglo de perros a través de lavados y cortes de pelo.
-                Aquellos que nos conocen destacan nuestra capacidad para manejar a los animales con calma y seguridad,
-                creando un ambiente relajante para ellos durante el proceso de aseo, con adaptación de técnicas
-                de acuerdo a las necesidades de cada raza. Como resultado ofrecemos alta calidad en los productos
-                utilizados y la comodidad constante de los perros. Buscamos establecer vínculos de confianza y
-                cooperación con los
-                animales, lo que facilita el proceso de aseo. Disfrutamos brindando a los perros un aspecto
-                saludable y agradable, y la destreza en el manejo de herramientas y productos de aseo es apreciada por
-                aquellos que han confiado en los servicios brindados. Nuestro compromiso radica en proporcionar cuidado
-                excepcional a
-                cada mascota, y mostrar nuestro cariño por los animales.
-            </p>
-            <br>
-    
-    
-    
-            <footer>
-                <h4>😎 2023 Codo a Codo. Todos los derechos reservados </h4>
-            </footer>
-    
-
-</body>
-
+      <!-- Sección Servicios -->
+      <section class="servicios">
+        <h3>Baño Estético y Sanitaro</h3>
+        <br>
+        <p>
+          El baño Estético es ideal para higienizar a nuestra mascota de forma
+          simple y rápida. <br>
+          Altamente recomendado como procedimiento previo en nuestra Peluqueria.
+          <br><br>
+          El baño santario incluye los cuidados necesarios para que nuestros
+          Pets puedan tener sus orejitas limpias por dentro y por fuera y sus
+          uñitas con un tratamiento de belleza estética. <br />
+          Servicios adicionales a pedido: limpieza de glándulas anales e higiene
+          oral.
+        </p>
+        <br><br>
+        <h3>Circuito Acuático</h3>
+        
+        <br>
+        <p>
+          Este servicio incluye personal cualificado para entrenamiento y
+          terapias en el agua.
+          <br>
+          Desde ir a buscar un juguete hasta caminatas por circuitos de poca
+          profundidad salvando obstáculos. También ofrecemos nado en piletas mas
+          profundas y tobogán acuático.
+          <br>
+          Todo esto y más, supervisado por entrenadores y terapéutas
+          matriculados.
+        </p>
+        <br><br>
+        <h3>Servicio de Gimnasio y Servicio de Entrenamiento</h3>
+        <br><br>
+        <p>
+          Nuestro compromiso con sus mascotas es totalmente serio y
+          profesional. Es por esta razón que ofrecemos entrenadores de modelaje
+          para exposición y entrenadores para Lazarillos...... Próximamente
+          incluiremos entrenadores para mascotas de terapia y de acompañantes
+          terapéuticos para adultos mayores.
+        </p>
+      </section>
+      <hr>
+    </main>  
+      <footer>
+        <div class="container">
+        <p class="copy">&copy; Copyright PetSpa 2023</p>
+        <br>
+        <p>Atención al cliente - Lunes a Sábados de 9 a 20hs.</p>
+        <br>
+        <p><a href="mailto:petspa@gmail.com"></a>petspa@gmail.com</p>
+        <br>
+        <p class="copy">
+            Desarrollado &#x2661; por
+            <a href="https://twitter.com/koladechris" target="_blank">Grupo Codo A Codo</a>
+        </p>
+    </div>
+    </footer>
+     </body>
 </html>
