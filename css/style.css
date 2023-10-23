@@ -194,15 +194,17 @@ margin-top: 50px;
 font-size: 2rem;}
 
 .slider-frame {
-    width: 250px;
+    width: 350px;
     height: auto;
     margin: 50px auto 0;
-    animation: 16s infinite alternate ease-in-out;
+    overflow: hidden;
+    
 }
 .slider-frame ul {
     display: flex;
     padding: 0;
     width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
 }
 .slider-frame li {
     list-style: none;
