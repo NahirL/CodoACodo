@@ -210,22 +210,29 @@ nav ul li {
 
 .productos {
     background-color: var(--primary-color);
-    padding: 1rem 15rem;
+    padding: 1rem;
 }
 
 .productos h2 {
+    background-color: #f29fe6;
     text-align: center;
     margin-top: 50px;
     font-size: 2rem;
+    padding: 3rem;
 
 }
 
 .productos h3 {
+    background-color: aliceblue;
     text-align: center;
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 1,5rem;
 }
 
+.productos p {
+    text-align: center;
+    margin-top: 5px;
+}
 .slider-frame {
     width: 350px;
     height: auto;
@@ -286,6 +293,18 @@ nav ul li {
 }
 
 
+.port {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 55.75rem;
+    margin: auto;
+}
+.port img {
+    height: 25.5rem;
+    width: 35rem;
+}
 
 
 /* Footer */
