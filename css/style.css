@@ -40,6 +40,7 @@ a:hover {
 body {
     font-family: var(--font-family);
 }
+
 button {
     font-size: 2.2;
     font-weight: bold;
@@ -50,9 +51,11 @@ button {
     color: white;
     background-color: #fc73b8;
 }
+
 button:hover {
-    background-color:hsl(330, 68%, 62%);
+    background-color: hsl(330, 68%, 62%);
 }
+
 
 /* Barra de navegación */
 
@@ -72,11 +75,11 @@ nav {
 
 nav h1 {
     color: var(--color-primario);
-	font-size: 2rem;
+    font-size: 2rem;
 }
 
 nav img {
-	height: 2rem;
+    height: 2rem;
     width: 4rem;
 }
 
@@ -158,9 +161,37 @@ nav ul li {
 }
 
 /* Servicios */
-.servicios { 
+.navegacion {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.navy {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.servicios {
     background-color: var(--primary-color);
     padding: 1rem 15rem;
+}
+
+.navy h3 {
+    font-size: 2.2;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #fc73b8;
+
+}
+
+.navy h3:hover {
+    background-color: hsl(330, 68%, 62%);
 }
 
 
@@ -168,15 +199,16 @@ nav ul li {
     margin-bottom: var(--bottom-margin);
     text-align: center;
 }
-   
+
 
 .servicios p {
     line-height: var(--line-height);
-    padding: 0.4rem;   
+    padding: 0.4rem;
 }
+
 /*Productos*/
 
-.productos { 
+.productos {
     background-color: var(--primary-color);
     padding: 1rem 15rem;
 }
@@ -188,45 +220,69 @@ nav ul li {
 
 }
 
-.productos h3 
-{text-align: center;
-margin-top: 50px;
-font-size: 2rem;}
+.productos h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
 
 .slider-frame {
     width: 350px;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
-    
+
 }
+
 .slider-frame ul {
     display: flex;
     padding: 0;
     width: 400%;
     animation: slide 16s infinite alternate ease-in-out;
 }
+
 .slider-frame li {
     list-style: none;
     width: 100%;
 }
+
 .slider-frame img {
     width: 100%;
 
 }
 
 @keyframes slide {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
+    0% {
+        margin-left: 0%;
+    }
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+    20% {
+        margin-left: 0%;
+    }
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    25% {
+        margin-left: -100%;
+    }
 
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -300%;
+    }
 }
 
 
@@ -234,13 +290,29 @@ font-size: 2rem;}
 
 /* Footer */
 
-footer {
-    background-color: hsl(135, 100%, 94%) ;
-    
-   display: flex;
-   flex-direction: column;
-   align-self: start;
+
+.item1 {
+    grid-area: miArea;
+   
+   
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'miArea miArea miArea miArea';
+    grid-gap: 10px;
+    background-color: #f29fe6;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(248, 242, 242, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
 
 /* Responsive */
 
@@ -302,17 +374,23 @@ footer {
         text-align: justify;
     }
 
+    .navy h3 {
+        text-align: justify;
+        display: flex;
+        flex-direction: row
+    }
+
     .servicios {
         margin-top: 2rem;
-        padding: 1rem 3.5rem;   
+        padding: 1rem 3.5rem;
     }
 
     .servicios h3 {
-        text-align: center; 
+        text-align: center;
     }
 
     .servicios p {
-        text-align: justify;    
+        text-align: justify;
     }
 
 }
