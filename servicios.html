@@ -2,38 +2,47 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="css/style.css" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PetSpa-Servicios</title>
-  <!-- Agregar el Favicon -->
-  <link rel="icon" href="img/favicon.png" />
+    <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Agregar fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel='stylesheet' href='css/style.css'>
+
+    <!-- Agregar el Favicon -->
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- Agregar fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>PetSpa</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1><img src="img/logo.png" alt=""></a>PetSpa</h1>
-      <ul class="navegacion">
-        <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-        <li><a href="productos.html" class="nav-link">Productos</a></li>
-        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-      </ul>
-      <ul>
-        <li><a href="#" class="nav-link">Soy cliente</a></li>
-      </ul>
-      <button class="menu-hamburguesa" id="menu-hamburguesa">
-        <ion-icon class="barras" name="menu-outline"></ion-icon>
-      </button>
-    </nav>
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <h1><img src="img/logo.png" alt="logo"></a>PetSpa</h1>
+            <ul class="navegacion">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="nav-link">Soy cliente</a></li>
+            </ul>
 
-  </header>
+            <button class="menu-hamburguesa" id="menu-hamburguesa">
+                <ion-icon class="barras" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
+    </header>
   <hr>
   <br>
   <section class="hero" id="about">
@@ -41,7 +50,7 @@
     <div class="bio animate__animated animate__shakeX">
       <h2 class="bio-titulo">Conoce nuestras competencias en cuidados</h2>
       <p class="mi texto">
-        "Servicios de nivel profesional al alcance de tu bolsillo y para el beneficio de tu mascota".
+        Servicios de nivel profesional al alcance de tu bolsillo y para el beneficio de tu mascota.
       </p>
     </div>
     <br>
@@ -50,20 +59,18 @@
   <section class="navy">
     <nav>
       <h3>Nuestros servicios</h3>
-      <div class="navegacion">
-        <button><a href="#baño">Baño Estético y Sanitaro</a></button>
-        <button><a href="#acuatico">Circuito Acuático</a></button>
-        <button><a href="#gym">Servicio de Gimnasio y Servicio de Entrenamiento</a></button>
-
+      <div class="navegation">
+        <button class="boton"><a href="#baño">Baño Estético y Sanitaro</a></button>
+        <button class="boton"><a href="#acuatico">Circuito Acuático</a></button>
+        <button class="boton"><a href="#gym">Servicio de Gimnasio y Servicio de Entrenamiento</a></button>
       </div>
       <br><br>
       <hr>
       <hr>
-
     </nav>
   </section>
-  <main class="contenedor">
 
+  <main class="contenedor">
     <section id="baño" class="servicios">
       <br><br>
       <hr>
@@ -141,13 +148,18 @@
           Desarrollado ❤️ por
           <a href="https://twitter.com/koladechris" target="_blank">Nahir, Daniela, Sol y Laura🐢Grupo Codo A Codo❤️</a>
           <br><br>
-          <p class="copy">&copy; Copyright PetSpa 2023</p>
+        <p class="copy">&copy; Copyright PetSpa 2023</p>
         </p>
       </div>
 
 
   </footer>
-  <script src="js/script.js">
+  <!-- Menú Hamburguesa -->
+  <script src="js/app.js"></script>
+
+  <!-- Iconos Menú Hamburguesa scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   </script>
 </body>

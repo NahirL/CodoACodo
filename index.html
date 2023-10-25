@@ -3,9 +3,11 @@
 
 <head>
     <meta charset='UTF-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
     <link rel='stylesheet' href='css/style.css'>
-    <script src='js/script.js'></script>
-    <title>PetSpa</title>
 
     <!-- Agregar el Favicon -->
     <link rel="icon" href="img/favicon.png">
@@ -14,13 +16,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>PetSpa</title>
 </head>
 
 <body>
-    
+    <header>
         <!-- Navbar -->
         <nav>
-            <h1><img src="img/logo.png" alt=""></a>PetSpa</h1>
+            <h1><img src="img/logo.png" alt="logo"></a>PetSpa</h1>
             <ul class="navegacion">
                 <li><a href="index.html" class="nav-link">Inicio</a></li>
                 <li><a href="servicios.html" class="nav-link">Servicios</a></li>
@@ -30,44 +37,89 @@
             <ul>
                 <li><a href="#" class="nav-link">Soy cliente</a></li>
             </ul>
+
             <button class="menu-hamburguesa" id="menu-hamburguesa">
                 <ion-icon class="barras" name="menu-outline"></ion-icon>
             </button>
         </nav>
+    </header>
 
     <!-- Sobre nosotros -->
-    <section class="hero" id="about">
-        <img src="img/imagen_spa.jpg" alt="nahir-leiva" loading="lazy" class="hero-img" />
-        <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-titulo">CUIDAMOS DE TU MASCOTA</h2>
-            <p class="bio-texto">
-                Dale a tus adoradas mascotas la experiencia de un spa de lujo que se merecen.
-                Contáctanos hoy y descubre cómo podemos hacer que se sientan mimados y felices.
-            </p>
-        </div>
-    </section>
+    <main>
+        <section class="hero" id="about">
+            <img src="img/imagen_spa.jpg" alt="nahir-leiva" loading="lazy" class="hero-img" />
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-titulo">CUIDAMOS DE TU MASCOTA</h2>
+                <p class="bio-texto">
+                    Dale a tus adoradas mascotas la experiencia de un spa de lujo que se merecen.
+                    Contáctanos hoy y descubre cómo podemos hacer que se sientan mimados y felices.
+                </p>
+            </div>
+        </section>
 
-    <section class="mas-sobre">
-        <h2>SOBRE NOSOTROS</h2>
-        <p>
-            Se nos reconoce por el cuidado y arreglo de mascotas a través de lavados y cortes de pelo.
-            Aquellos que nos conocen destacan nuestra capacidad para manejar a los animales con calma y seguridad,
-            creando un ambiente relajante para ellos durante el proceso de aseo, con adaptación de técnicas
-            de acuerdo a las necesidades de cada raza.
-        </p>
-        <br>
-        <p>
-            Ofrecemos alta calidad en los productos utilizados y la comodidad constante de los animales. 
-            Buscamos establecer vínculos de confianza y cooperación lo que facilita el proceso de aseo.
-        </p>
-        <br>
-        <p>
-            Disfrutamos brindando un aspecto saludable y agradable, y la destreza en el manejo de herramientas y 
-            productos de aseo es apreciada por aquellos que han confiado en los servicios brindados. 
-            Nuestro compromiso radica en proporcionar cuidado excepcional a cada mascota, 
-            y mostrar nuestro cariño por los animales.
-        </p>
-    </section>
+        <section class="mas-sobre">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>
+                Se nos reconoce por el cuidado y arreglo de mascotas a través de lavados y cortes de pelo.
+                Aquellos que nos conocen destacan nuestra capacidad para manejar a los animales con calma y seguridad,
+                creando un ambiente relajante para ellos durante el proceso de aseo, con adaptación de técnicas
+                de acuerdo a las necesidades de cada raza.
+            </p>
+            <br>
+            <p>
+                Ofrecemos alta calidad en los productos utilizados y la comodidad constante de los animales.
+                Buscamos establecer vínculos de confianza y cooperación lo que facilita el proceso de aseo.
+            </p>
+            <br>
+            <p>
+                Disfrutamos brindando un aspecto saludable y agradable, y la destreza en el manejo de herramientas y
+                productos de aseo es apreciada por aquellos que han confiado en los servicios brindados.
+                Nuestro compromiso radica en proporcionar cuidado excepcional a cada mascota,
+                y mostrar nuestro cariño por los animales.
+            </p>
+        </section>
+
+        <!-- Projects section -->
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Nuestra cultura</h2>
+            <div class="projects-container">
+                <div class="project-container project-card">
+                    <img src="img/dia-mundial-de-los-animales.png" alt="logo-cultura" loading="lazy"
+                        class="project-pic" />
+                    <h3 class="project-title">Un mundo mejor</h3>
+                    <p class="project-details">
+                        Creemos que el respeto y la protección de todas las formas
+                        de vida en nuestro planeta son fundamentales para construir un mundo más compasivo,
+                        donde cada ser vivo merece ser tratado con dignidad y cuidado.
+                        Juntos, podemos construir un mundo mejor para los animales.
+                    </p>
+
+                </div>
+                <div class="project-container project-card">
+                    <img src="img/cuidado-animal.png" alt="logo-cultura" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">Respeto y bienestar</h3>
+                    <p class="project-details">
+                        En nuestro spar creemos en brindar un entorno de bienestar y comodidad para las mascotas,
+                        un espacio donde cada animal sea tratado con el respeto y la atención
+                        que merece donde cada tratamiento se realiza con amor y cuidado, priorizando su salud y
+                        felicidad.
+                    </p>
+
+                </div>
+                <div class="project-container project-card">
+                    <img src="img/mostrar.png" alt="logo-cultura" loading="lazy" class="project-pic" />
+                    <h3 class="project-title">Garantía de buen servicio</h3>
+                    <p class="project-details">
+                        Nuestra política en el spa animal se centra en la educación constante y la mejora continua de
+                        nuestros servicios para garantizar que nuestras mascotas tengan acceso a las últimas técnicas de
+                        cuidado y bienestar, respaldadas por un equipo de profesionales apasionados por su trabajo
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
     <!-- footer -->
@@ -75,15 +127,24 @@
         <div class="grid-container">
 
             <div class="item1">
-              <p class="copy">
-                Desarrollado ❤️ por
-                <a href="https://twitter.com/koladechris" target="_blank">Nahir, Daniela, Sol y Laura🐢Grupo Codo A Codo❤️</a>
-                <br><br>
+                <p class="copy">
+                    Desarrollado ❤️ por
+                    <a href="https://twitter.com/koladechris" target="_blank">Nahir, Daniela, Sol y Laura🐢Grupo Codo A
+                        Codo❤️</a>
+                    <br><br>
                 <p class="copy">&copy; Copyright PetSpa 2023</p>
-              </p>
+                </p>
             </div>
-      
-       </footer>
+
+    </footer>
+
+    <!-- Menú Hamburguesa -->
+    <script src="js/app.js"></script>
+
+    <!-- Iconos Menú Hamburguesa scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
